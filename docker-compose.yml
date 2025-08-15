@@ -1,0 +1,19 @@
+services:
+  nicegui:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: streamlit-example
+    cpus: 2
+    mem_limit: 2048m
+    ports:
+      - "8080:8080"
+    environment:
+      - NICEGUI_STORAGE_DIR="/data"
+      - NICEGUI_PORT=8080
+      - PYTHONUNBUFFERED=True
+    volumes:
+      - ".:/app:rw"
+      - "./data:/data"
+  
+  

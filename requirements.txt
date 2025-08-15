@@ -1,0 +1,6 @@
+polars
+pyecharts
+QuickEcharts
+nicegui-tabulator
+plotly
+great_tables
