@@ -3,7 +3,6 @@ FROM zauberzeug/nicegui:2.22.2
 COPY . .
 
 RUN pip install -r requirements.txt
-RUN pip3 install -r requirements.txt
 
 # Copy application code
 COPY . .
